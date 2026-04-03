@@ -1,56 +1,72 @@
-# Customer_Purchase_Prediction
+🛍️ Diwali Sales Analysis
+📌 Project Overview
 
-**Project Overview**
-This project focuses on analyzing customer behavior and building a predictive model to identify customers who are likely to churn. By using exploratory data analysis (EDA), feature engineering, and machine learning, the goal is to help businesses take proactive steps in customer retention.
+This project focuses on analyzing customer purchase behavior using Python. The dataset contains sales data (Diwali Sales), and the goal is to extract meaningful insights that can help businesses understand customer trends and improve decision-making.
 
-**Objectives**
+🎯 Objectives
+Perform data cleaning and preprocessing
+Analyze customer demographics (age, gender, occupation, etc.)
+Identify purchasing patterns
+Visualize sales trends
+Generate business insights for better marketing strategies
+📂 Dataset
+File Used: Diwali Sales Data.csv
+Contains customer details such as:
+Gender
+Age Group
+Marital Status
+State
+Occupation
+Product Category
+Purchase Amount
+🛠️ Technologies Used
+Python
+Libraries:
+NumPy
+Pandas
+Matplotlib
+Seaborn
+🔍 Steps Performed
+1. Data Loading
+Imported dataset using Pandas
+Checked structure using .head(), .info(), .shape()
+2. Data Cleaning
+Dropped unnecessary columns (Status, unnamed1)
+Removed null values
+Converted data types (Amount → Integer)
+3. Data Analysis
+Gender-wise purchase analysis
+Age group spending patterns
+State-wise sales distribution
+Occupation-based purchasing trends
+Product category insights
+4. Data Visualization
+Used Matplotlib and Seaborn for:
+Bar charts
+Count plots
+Distribution plots
+📊 Key Insights
+Married women aged 26–35 are major buyers
+Certain states contribute significantly to total sales
+IT, Healthcare, and Aviation sectors show higher purchasing power
+Specific product categories dominate sales
+🚀 Conclusion
 
-Perform exploratory data analysis (EDA) to uncover churn patterns.
-Engineer relevant features for better model performance.
-Build and evaluate classification models to predict customer churn.
-Visualize important churn indicators and actionable insights.
+This analysis helps businesses:
 
-**Tools & Technologies**
-
-Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)
-Jupyter Notebook
-Machine Learning Models: Logistic Regression, Random Forest, Decision Tree
-
-**Key Features**
-
-Data Cleaning & Preprocessing: Handled missing values, encoded categorical variables, and normalized data.
-EDA: Visualized relationships between churn and key variables like contract type, tenure, and monthly charges.
-Model Building: Trained and compared multiple ML models using accuracy, precision, recall, F1-score, and ROC-AUC.
-Feature Importance: Identified top factors influencing churn using model-based and permutation importance.
-Confusion Matrix & ROC Curve: Evaluated model performance visually.
-
-**Dataset**
-Source: Telco Customer Churn Dataset (Kaggle)
-Size: ~7,000 customer records
-
-**Fields Used:**
-
-Customer ID, Gender, Senior Citizen, Partner, Dependents
-Tenure, Contract Type, Payment Method, Monthly Charges
-Internet Service, Online Security, Tech Support, Churn
-
-**Insights Gained**
-
-Customers with month-to-month contracts and high monthly charges are more likely to churn.
-Lack of services like online security and tech support correlate with higher churn rates.
-Long-tenured customers show higher retention and satisfaction.
-
-**How to Run the Project**
-
-Clone this repository.
-Install the required libraries:
-pip install pandas numpy scikit-learn seaborn matplotlib
-Open Customer_Churn_Analysis.ipynb in Jupyter Notebook.
-Run each cell step-by-step to explore the data and model output.
-
-**Future Enhancements**
-
-Implement XGBoost or LightGBM for improved accuracy.
-Deploy the model using Flask or Streamlit for business use.
-Integrate with real-time customer data APIs for live churn scoring.
-
+Target the right customer segment
+Optimize marketing campaigns
+Improve product positioning
+Increase revenue through data-driven decisions
+📁 Project Structure
+├── Customer_Purchase Prediction.ipynb
+├── Diwali Sales Data.csv
+└── README.md
+▶️ How to Run
+Clone the repository
+Open the notebook in Jupyter Notebook / VS Code
+Run all cells step-by-step
+🙌 Future Improvements
+Build a machine learning model for purchase prediction
+Deploy as a web dashboard (Streamlit/Power BI)
+Add real-time data integration
